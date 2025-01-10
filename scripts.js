@@ -418,7 +418,8 @@ which.innerHTML = "A votre tour joueur 1 !";
 let replay = document.getElementById("replay");
 
 replay.addEventListener("click", function (event) {
-    page4.addEventListener(
+  page4.classList.add("fade-out");  
+  page4.addEventListener(
       "animationend",
       () => {
         page4.style.display = "none";
