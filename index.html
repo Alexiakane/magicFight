@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page1">
+    <div class="titre2"></div>
+    <p id="titre1" class="honk"><a href="#">START</a></p>
+    <div id="menu" class="honk">
+      <p><a href="#">1 Joueur</a></p>
+      <p><a href="#" id="j2">2 Joueurs</a></p>
+      <p><a href="#">Options</a></p>
+      <p><a href="#">Quitter</a></p>
+    </div>
+  </div>
+
+  <div class="page2">
+    <div class="selectionperso">
+      <div class="perso perso1"></div>
+      <div class="perso perso2"></div>
+      <div class="perso perso3"></div>
+      <div class="perso perso4"></div>
+      <div class="perso perso5"></div>
+      <div class="perso perso6"></div>
+    </div>
+    <div class="joueur1">
+      <div class="j1ecrito">
+        <p class="j1txt">J1</p>
+      </div>
+      <div class="name">
+        <p class="nom">NOM JOUEUR</p>
+      </div>
+      <div class="photoPersoJ1"></div>
+      <div id="statsJ1"></div>
+    </div>
+    <div class="joueur2">
+      <div class="j2ecrito">
+        <p class="j2txt">J2</p>
+      </div>
+      <div class="name2">
+        <p class="nom2">NOM JOUEUR</p>
+      </div>
+      <div class="photoPersoJ2"></div>
+      <div id="statsJ2"></div>
+    </div>
+    <div class="logoVS">
+      <img src="/images/Pngtreevs_versus_typography_design_5982247.png" alt="" class="vsstreet" />
+    </div>
+    <div class="buttonR">
+      <button class="button">ALÉATOIRE</button>
+    </div>
+  </div>
+  <div class="page3">
+    <div id="imgFight">
+      <div id="imgJ1"></div>
+      <div id="imgJ2"></div>
+    </div>
+    <div id="pvPmAtkBar">
+      <div>
+        <div id="pvPmJ1" class="pvPm">
+          <p class="p1txt"></p>
+          <div id="pvJ1" class="pv">
+            <label for="file">Vie :</label>
+
+            <meter id="lifeBarJ1" class="lifeB" min="0" low="20" high="90" max="200" value=""></meter>
+          </div>
+          <div id="pmJ1" class="pm">
+            <label for="file">Mana :</label>
+
+            <meter id="manaBarJ1" class="manaB" min="0" low="20" high="90" max="200" value=""></meter>
+          </div>
+        </div>
+        <div id="pvPmJ2" class="pvPm">
+          <p class="p2txt"></p>
+          <div id="pvJ2" class="pv">
+            <label for="file">Vie :</label>
+
+            <meter id="lifeBarJ2" class="lifeB" min="0" low="20" high="90" max="200" value=""></meter>
+          </div>
+          <div id="pmJ2" class="pm">
+            <label for="file">Mana :</label>
+
+            <meter id="manaBarJ2" class="manaB" min="0" low="20" high="90" max="200" value=""></meter>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <p id="whichP"></p>
+        </div>
+        <button id="base" class="atkButton"> Attaque Basique</button>
+        <button id="spell2" class="atkButton"> Sort 2</button>
+        <button id="spell3" class="atkButton"> Sort 3</button>
+        <button id="atkspe" class="atkButton"> Attaque Speciale</button>
+        <button id="soin" class="atkButton"> Sort de Soin</button>
+      </div>
+    </div>
+  </div>
+  <div class="page4">
+    <button id="replay">Replay</button>
+  </div>
+  <script src="scripts.js"></script>
+  <script src="characters.js"></script>
+  <script src="fight.js"></script>
+</body>
+
+</html>
