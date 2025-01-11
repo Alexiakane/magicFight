@@ -1,8 +1,4 @@
-let btnBase = document.getElementById("base");
-let btnSpell2 = document.getElementById("spell2");
-let btnSpell3 = document.getElementById("spell3");
-let btnSpe = document.getElementById("atkspe");
-let btnHeal = document.getElementById("soin");
+which.textContent = "A votre tour joueur 1 !";
 
 btnBase.addEventListener("click", () => {
     if (tourJ1) {
@@ -40,3 +36,45 @@ btnHeal.addEventListener("click", () => {
         player2choice.sante();
     }
 });
+
+function nextScreen3() {
+    page3.classList.add("fade-out");
+  
+    page3.addEventListener(
+      "animationend",
+      () => {
+        page3.style.display = "none";
+        page3.classList.remove("fade-out");
+  
+        page4.style.display = "flex";
+        page4.classList.add("fade-in");
+  
+        setTimeout(() => {
+          page4.classList.add("visible");
+        }, 50);
+      },
+      { once: true },
+    );
+  }
+
+  replay.addEventListener("click", function (event) {
+    page4.classList.add("fade-out");  
+    page4.addEventListener(
+        "animationend",
+        () => {
+          page4.style.display = "none";
+          page4.classList.remove("fade-out");
+    
+          page2.style.display = "flex";
+          page2.classList.add("fade-in");
+    
+          setTimeout(() => {
+            page2.classList.add("visible");
+          }, 50);
+        },
+        { once: true },
+      );
+      chargement();
+    }
+  );
+  

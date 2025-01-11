@@ -75,9 +75,9 @@ a:hover {
 #menu {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
-  font-size: 50px;
-  margin-left: 100px;
+  gap: 5%;
+  font-size: 40px;
+  margin-left: 10%;
   display: none;
   transform: translateY(-30vh);
 }
@@ -254,8 +254,8 @@ a:hover {
 }
 
 .photoPersoJ1 {
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
 }
 
 #statsJ1 {
@@ -309,8 +309,8 @@ a:hover {
 }
 
 .photoPersoJ2 {
-  height: 600px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
 }
 
 .perso1 {
