@@ -28,7 +28,6 @@ btnSpe.addEventListener("click", () => {
         player2choice.atkSpe(player1choice);
     }
 });
-
 btnHeal.addEventListener("click", () => {
     if (tourJ1) {
         player1choice.sante();
@@ -57,6 +56,10 @@ function nextScreen3() {
     );
   }
 
+  function reset() {
+    readyPlayer1 = false;
+    }
+
   replay.addEventListener("click", function (event) {
     page4.classList.add("fade-out");  
     page4.addEventListener(
@@ -75,6 +78,6 @@ function nextScreen3() {
         { once: true },
       );
       chargement();
+      reset();
     }
   );
-  

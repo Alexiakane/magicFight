@@ -30,18 +30,18 @@ photo1.appendChild(choix);
 photo2.appendChild(choix2);
 
 function showStats(perso) {
-  return "Points de vie : " + perso.hp + String.fromCharCode(13) + " Points de mana : " + perso.pm + String.fromCharCode(13) + " Origine : " + perso.origin;
+  return "Points de vie : " + perso.hp +  "\n Points de mana : " + perso.pm + "\n Attaque spéciale : \n" + perso.spe + "\n Origine : " + perso.origin;
 }
 
 function overCharac(playerChoice) {
   if (readyPlayer1 === true) {
     choix2.src = playerChoice.img;
     nomJ2.textContent = playerChoice.name;
-    statsJ2.textContent = showStats(playerChoice);
+    statsJ2.innerText = showStats(playerChoice);
   } else {
     choix.src =  playerChoice.img;
     nomJ1.textContent = playerChoice.name;
-    statsJ1.textContent = showStats(playerChoice);
+    statsJ1.innerText = showStats(playerChoice);
   }
 }
 
@@ -134,24 +134,8 @@ button.addEventListener(
     let r = alea(1, 6);
     console.log(characters[r]);
 
-    if (readyPlayer1 === true) {
-      choix2.src = `images/${images[r]}`;
-      nomJ2.textContent = emile[r];
-    } else {
-      choix.src = `images/${images[r]}`;
-      nomJ1.textContent = emile[r];
-    }
+   overCharac(playersChoice[r]);
+   choixPerso(characters[r],playersChoice[r]);
 
-    if (readyPlayer1 === false) {
-      readyPlayer1 = true;
-      characters[r].style.border = "solid";
-      characters[r].style.borderColor = "blue";
-    } else {
-      if (characters[r].style.borderColor != "blue") {
-        characters[r].style.border = "solid";
-        characters[r].style.borderColor = "red";
-        chargement();
-      }
-    }
   }
 )

@@ -56,8 +56,10 @@ let vishnu = new Fighter(
     VISHNU.soin,
     VISHNU.soinpm,
     VISHNU.urlImg,
-    VISHNU.img
+    VISHNU.img,
+    VISHNU.spe
 );
+
 let alex = new Fighter(
     ALEX.name,
     ALEX.hp,
@@ -73,7 +75,8 @@ let alex = new Fighter(
     ALEX.soin,
     ALEX.soinpm,
     ALEX.urlImg,
-    ALEX.img
+    ALEX.img,
+    ALEX.spe
 );
 
 let takumi = new Fighter(
@@ -91,8 +94,10 @@ let takumi = new Fighter(
     TAKUMI.soin,
     TAKUMI.soinpm,
     TAKUMI.urlImg,
-    TAKUMI.img
+    TAKUMI.img,
+    TAKUMI.spe
 );
+
 let venus = new Fighter(
     VENUS.name,
     VENUS.hp,
@@ -108,7 +113,8 @@ let venus = new Fighter(
     VENUS.soin,
     VENUS.soinpm,
     VENUS.urlImg,
-    VENUS.img
+    VENUS.img,
+    VENUS.spe
 );
 
 let shadow = new Fighter(
@@ -126,7 +132,8 @@ let shadow = new Fighter(
     SHADOW.soin,
     SHADOW.soinpm,
     SHADOW.urlImg,
-    SHADOW.img
+    SHADOW.img,
+    SHADOW.spe
 );
 
 let ryuk = new Fighter(
@@ -144,7 +151,8 @@ let ryuk = new Fighter(
     RYUK.soin,
     RYUK.soinpm,
     RYUK.urlImg,
-    RYUK.img
+    RYUK.img,
+    RYUK.spe
 );
 
 let btnBase = document.getElementById("base");
@@ -152,3 +160,12 @@ let btnSpell2 = document.getElementById("spell2");
 let btnSpell3 = document.getElementById("spell3");
 let btnSpe = document.getElementById("atkspe");
 let btnHeal = document.getElementById("soin");
+
+let playersChoice = {
+    1: vishnu,
+    2: alex,
+    3: takumi,
+    4: venus,
+    5: shadow,
+    6: ryuk
+  }

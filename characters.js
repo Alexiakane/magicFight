@@ -7,7 +7,7 @@
     Venus (rousse) */
 
 class Fighter {
-  constructor(name, hp, pm, origin, special, spepm, base, atk2, atk2pm, atk3, atk3pm, soin, soinpm, urlImg,img) {
+  constructor(name, hp, pm, origin, special, spepm, base, atk2, atk2pm, atk3, atk3pm, soin, soinpm, urlImg,img,spe) {
     this.name = name;
     this.hp = hp;
     this.pm = pm;
@@ -23,6 +23,7 @@ class Fighter {
     this.soinpm = soinpm;
     this.urlImg = urlImg;
     this.img = img;
+    this.spe = spe;
   }
 
   changeTour() {
@@ -55,7 +56,6 @@ class Fighter {
     console.log("il reste " + cible.hp + " pv à " + cible.name);
     console.log("il reste " + this.pm + " pm à " + this.name);
   }
-
 
   spell2(cible) {
     if (this.pm >= this.atk2pm) {
