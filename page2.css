@@ -1,0 +1,205 @@
+#page2 {
+    overflow: hidden;
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+}
+
+.selectPerso {
+    height: 30%;
+    width: 30%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.perso {
+    height: 50%;
+    width: 30%;
+    background-color: black;
+    border: solid;
+    border-color: darkslateblue;
+}
+
+.perso:hover {
+    border: solid;
+    border-color: goldenrod;
+}
+
+#perso1 {
+    background-image: url("images/hindiTete.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#perso2 {
+    background-image: url("images/jeuneTete.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#perso3 {
+    background-image: url("images/samouTete.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#perso4 {
+    background-image: url("images/rousseTete.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#perso5 {
+    background-image: url("images/omendupauvre.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#perso6 {
+    background-image: url("images/geantTete.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.joueur1 {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 30%;
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+}
+
+.j1ecrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    width: 100%;
+}
+
+.j1txt {
+    margin: 0;
+    font-family: "Press Start 2P";
+    font-size: 3em;
+    color: blue;
+}
+
+.name {
+    font-family: "Press Start 2P";
+    font-size: 3em;
+    color: white;
+    height: 1em;
+    width: 100%;
+}
+
+.nom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Press Start 2P;
+    font-size: 1em;
+    color: white;
+    margin: 0;
+}
+
+.photoPersoJ1 {
+    height: 100%;
+    width: 100%;
+}
+
+#statsJ1 {
+    position: relative;
+    bottom: 10%;
+    height: 10%;
+    font-family: "Press Start 2P";
+    font-size: 3vh;
+    color: blue;
+}
+
+.joueur2 {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 30%;
+    background-color: transparent;
+    position: absolute;
+    right: 0px;
+}
+
+.j2ecrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    width: 100%;
+}
+
+.j2txt {
+    margin: 0;
+    font-family: "Press Start 2P";
+    font-size: 3em;
+    color: red;
+}
+
+.photoPersoJ2 {
+    height: 100%;
+    width: 100%;
+}
+
+#statsJ2 {
+    position: relative;
+    bottom: 10%;
+    height: 10%;
+    font-family: "Press Start 2P";
+    font-size: 3vh;
+    color: red;
+}
+
+#logoVS {
+    position: absolute;
+    top: 23%;
+}
+.vsstreet {
+    height: 40vh;
+  }
+  
+#buttonR {
+    position: absolute;
+    bottom: 3%;
+}
+.button {
+    box-shadow: indigo;
+    border-color: darkslateblue;
+    border-radius: 15%;
+    width: 200px;
+    height: 40px;
+    font-size: 2em ;
+    color: darkslateblue;
+    background-color: transparent;
+  }
+  
+  .button:hover {
+    color: goldenrod;
+  }

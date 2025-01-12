@@ -1,11 +1,10 @@
-const titre1 = document.querySelector("#titre1");
+const titre1 = document.getElementById("titre1");
 
-const joueurs = document.querySelector("#j2");
+const joueurs = document.getElementById("j2");
 
-const page1 = document.querySelector(".page1");
-const page2 = document.querySelector(".page2");
-const page3 = document.querySelector(".page3");
-const page4 = document.querySelector(".page4");
+const page1 = document.getElementById("page1");
+const page2 = document.getElementById("page2");
+const page3 = document.getElementById("page3");
 
 const VISHNU = {
   name: "VISHNU",
@@ -21,7 +20,7 @@ const VISHNU = {
   atk3pm: 35,
   soin: 0,
   soinpm: 0,
-  urlImg: "images/indeSANSFOND.png",
+  urlImg: "images/indeSf.png",
   img: "images/inde.jpg",
   spe: "Udann Chakra !"
 };
@@ -39,7 +38,7 @@ const ALEX = {
   atk3pm: 35,
   soin: 0,
   soinpm: 0,
-  urlImg: "images/jeuneSANSFOND.png",
+  urlImg: "images/jeunePx.png",
   img: "images/jeune.jpg",
   spe: "Moules Frites !"
 };
@@ -57,7 +56,7 @@ const TAKUMI = {
   atk3pm: 35,
   soin: 0,
   soinpm: 0,
-  urlImg: "images/samouraiSANSFOND.png",
+  urlImg: "images/samouraiPied.png",
   img: "images/samourai.jpg",
   spe: "Bankaï !"
 };
@@ -75,7 +74,7 @@ const VENUS = {
   atk3pm: 0,
   soin: 40,
   soinpm: 60,
-  urlImg: "images/natureSANSFOND.png",
+  urlImg: "images/natureSf.png",
   img: "images/nature.jpg",
   spe: "Breaking Balls !"
 };
@@ -94,8 +93,8 @@ const SHADOW = {
   atk3pm: 0,
   soin: 35,
   soinpm: 50,
-  urlImg: "images/shinobiSANSFOND.png",
-  img: "images/shinobi.jpg",
+  urlImg: "images/shinobiSfPx.png",
+  img: "images/shinobiPxSf.jpg",
   spe: "Kage Bunshin No Jutsu !"
 };
 const RYUK = {
@@ -112,7 +111,7 @@ const RYUK = {
   atk3pm: 0,
   soin: 0,
   soinpm: 0,
-  urlImg: "images/geantSANSFOND.png",
+  urlImg: "images/geantSf.png",
   img: "images/geant.jpg",
   spe: "Ich bin Kartoffel !"
 };

@@ -36,7 +36,7 @@ btnHeal.addEventListener("click", () => {
     }
 });
 
-function nextScreen3() {
+/*function nextScreen3() {
     page3.classList.add("fade-out");
   
     page3.addEventListener(
@@ -54,13 +54,13 @@ function nextScreen3() {
       },
       { once: true },
     );
-  }
+  }*/
 
   function reset() {
     readyPlayer1 = false;
     }
 
-  replay.addEventListener("click", function (event) {
+  /*replay.addEventListener("click", function (event) {
     page4.classList.add("fade-out");  
     page4.addEventListener(
         "animationend",
@@ -80,4 +80,4 @@ function nextScreen3() {
       chargement();
       reset();
     }
-  );
+  );*/

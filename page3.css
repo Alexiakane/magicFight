@@ -1,0 +1,114 @@
+#page3 {
+    background-image: url(images/battleBackground.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#imgFight {
+    height: 75%;
+    width: 50%;
+    display: flex;
+    position: absolute;
+}
+
+#imgJ1 {
+    position: relative;
+    left: 20%;
+    top: 17%;
+}
+
+#imgJ2 {
+    position: relative;
+    left: 80%;
+    top: 17%;
+}
+
+#pvPmAtkBar {
+    height: 40%;
+    width: 75%;
+    color: white;
+    font-family: "Press Start 2P";
+    position: relative;
+    top: 75%;
+}
+
+#pvPmJ1 {
+    position: relative;
+    left: 5%;
+}
+
+.pvPm {
+    height: 6em;
+    width: 25em;
+
+}
+
+.p1txt {
+    margin: 0;
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    color: darkblue;
+    border-color: black;
+}
+
+label {
+    padding-left: 5%;
+    font-size: 125%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.barPvPm {
+    height: 50%;
+
+}
+
+.bar {
+    width: 100%;
+    height: 1em;
+    background: transparent;
+}
+
+#pvPmJ2 {
+    position: relative;
+    left: 90%;
+}
+
+.p2txt {
+    margin: 0;
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    color: red;
+    border-color: black;
+}
+
+#whichP {
+    position: relative;
+    left: 50%;
+}
+
+/*.atkButton {
+    box-shadow: indigo;
+    border-color: darkslateblue;
+    height: 2rem;
+    width: 15%;
+    background-color: darkslateblue;
+    color: goldenrod;
+    position: relative;
+    left: 30%;
+}*/
+
+#replay {
+    box-shadow: black;
+    border-color: darkslateblue;
+    border-radius: 15%;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: darkslateblue;
+    background-color: transparent;
+}

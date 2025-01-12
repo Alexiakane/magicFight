@@ -1,0 +1,48 @@
+#page1 {
+    background-image: url(images/fond4.png);
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.titre2 {
+    background-image: url(images/magic3.png);
+    background-size: cover;
+    height: 60vh;
+    width: 40vw;
+    transform: translate(30vw);
+}
+
+#titre1 {
+    transform: translate(44vw, 5vh);
+    font-size: 3em;
+    color: rgb(140, 37, 236);
+}
+
+
+.honk {
+    font-family: "Press Start 2P", serif;
+    font-weight: 30%;
+    font-style: normal;
+}
+
+a {
+    color: rgb(140, 37, 236);
+}
+
+a:hover {
+    color: gold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 150%;
+    margin-left: 10%;
+    display: none;
+    transform: translateY(-30vh);
+  }  

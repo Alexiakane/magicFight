@@ -64,17 +64,9 @@ character6.addEventListener("mouseover", function (event) {
   overCharac(ryuk);
 });
 
-function chargement() {
-  document.body.style.backgroundImage = "url(images/chargement.jpg)";
-  let selection = document.querySelector(".selectionperso");
-  let aleatory = document.querySelector(".buttonR")
-  selection.style = "display : none";
-  aleatory.style = "display : none";
+function chargementJ1() {
   meterLifeJ1.value += player1choice.hp;
   meterManaJ1.value += player1choice.pm;
-  meterLifeJ2.value += player2choice.hp;
-  meterManaJ2.value += player2choice.pm;
-  let imgJ1 = document.getElementById("imgJ1");
   let photoJ1 = document.createElement("img");
   photoJ1.src = player1choice.urlImg;
   photoJ1.style.width = "100%";
@@ -82,7 +74,10 @@ function chargement() {
   imgJ1.appendChild(photoJ1);
   let player1 = document.querySelector(".p1txt");
   player1.textContent = player1choice.name;
-  let imgJ2 = document.getElementById("imgJ2");
+}
+function chargementJ2() {
+  meterLifeJ2.value += player2choice.hp;
+  meterManaJ2.value += player2choice.pm;
   let photoJ2 = document.createElement("img");
   photoJ2.src = player2choice.urlImg;
   photoJ2.style.width = "100%";
@@ -90,7 +85,20 @@ function chargement() {
   imgJ2.appendChild(photoJ2);
   let player2 = document.querySelector(".p2txt");
   player2.textContent = player2choice.name;
+}
+
+function chargement() {
+  document.body.style.backgroundImage = "url(images/chargement.jpg)";
+  let selection = document.querySelector(".selectPerso");
+  let aleatory = document.getElementById("buttonR")
+  selection.style = "display : none";
+  aleatory.style = "display : none";
+  chargementJ1();
+  chargementJ2();
+  photoReverse();
   nextScreen2();
+  music.src = "music/ChopSuey8Bit.mp3";
+  music.play();
 }
 
 function choixPerso(character, playerChoice) {
@@ -139,3 +147,12 @@ button.addEventListener(
 
   }
 )
+
+function photoReverse() {
+  if (alex == player2choice){
+    imgJ2.style.transform = "scale(-1,1)";
+  }
+  if (takumi == player1choice){
+    imgJ1.style.transform = "scale(-1,1)";
+  }
+}

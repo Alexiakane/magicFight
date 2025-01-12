@@ -1,3 +1,5 @@
+music.play();
+
 titre1.addEventListener("click", () => {
     console.log("bip bip");
     titre1.style.display = "none";

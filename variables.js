@@ -1,18 +1,22 @@
 let player1choice;
 let player2choice;
 let tourJ1 = true;
+let music = document.getElementById("music");
 
 let meterLifeJ1 = document.getElementById("lifeBarJ1");
 let meterManaJ1 = document.getElementById("manaBarJ1");
 let meterLifeJ2 = document.getElementById("lifeBarJ2");
 let meterManaJ2 = document.getElementById("manaBarJ2");
 
-let character1 = document.querySelector(".perso1");
-let character2 = document.querySelector(".perso2");
-let character3 = document.querySelector(".perso3");
-let character4 = document.querySelector(".perso4");
-let character5 = document.querySelector(".perso5");
-let character6 = document.querySelector(".perso6");
+let character1 = document.getElementById("perso1");
+let character2 = document.getElementById("perso2");
+let character3 = document.getElementById("perso3");
+let character4 = document.getElementById("perso4");
+let character5 = document.getElementById("perso5");
+let character6 = document.getElementById("perso6");
+
+let imgJ1 = document.getElementById("imgJ1");
+let imgJ2 = document.getElementById("imgJ2");
 
 let characters = {
     1: character1,
@@ -28,18 +32,19 @@ let choix2 = document.createElement("img");
 
 let photo1 = document.querySelector(".photoPersoJ1");
 let photo2 = document.querySelector(".photoPersoJ2");
-let nomJ1 = document.querySelector(".nom");
-let nomJ2 = document.querySelector(".nom2");
+let nomJ1 = document.getElementById("nom1");
+let nomJ2 = document.getElementById("nom2");
 let statsJ1 = document.getElementById("statsJ1");
 let statsJ2 = document.getElementById("statsJ2");
 
 let readyPlayer1 = false;
 
-let button = document.querySelector(".button");
+let button = document.getElementById("aleaButton");
 
 let which = document.getElementById("whichP");
 
 let replay = document.getElementById("replay");
+let selec = document.getElementById("selec");
 
 let vishnu = new Fighter(
     VISHNU.name,
